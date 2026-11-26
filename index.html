@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Balashanthi & Simonraja · Wedding Invitation</title>
+<meta name="description" content="You are invited to the wedding of G. Balashanthi and J. Simonraja, Sunday 13 December 2026, Rasi Mandapam, Eral.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus&family=Noto+Serif+Tamil:wght@400;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 class="sr">Wedding invitation of G. Balashanthi and J. Simonraja</h1>
+
+<!-- Gate -->
+<div class="gate" id="gate" role="dialog" aria-label="Invitation cover">
+  <svg class="thoranam" id="thoranam" aria-hidden="true"></svg>
+  <div class="door left"></div>
+  <div class="door right"></div>
+  <div class="gate-content">
+    <div class="medallion"><img src="images/ganesha.jpg" alt=""></div>
+    <p class="gate-om">ஓம் முருகா துணை</p>
+    <p class="gate-small">With all our hearts</p>
+    <p class="gate-big gold-text">You are invited</p>
+    <p class="gate-names">Balashanthi &amp; Simonraja</p>
+    <button class="btn-open" id="openBtn">Open invitation</button>
+    <p class="gate-hint">Tap to open the doors</p>
+  </div>
+  <div class="diyas" aria-hidden="true"><div class="diya"></div><div class="diya"></div></div>
+</div>
+
+<button class="music" id="music" aria-label="Play music" aria-pressed="false">
+  <svg class="note" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 17.5a3 3 0 1 1-2-2.83V5l12-2v11.5a3 3 0 1 1-2-2.83V7.1L9 8.5z"/></svg>
+  <svg class="bars" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="4" y="6" width="3.5" height="14" rx="1"/><rect x="10.25" y="3" width="3.5" height="17" rx="1"/><rect x="16.5" y="8" width="3.5" height="12" rx="1"/></svg>
+</button>
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<main>
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="hero-art reveal"><div class="frame"><img src="images/couple.jpg" alt="Lord Murugan and Valli before the Tiruchendur temple, from the wedding card"></div></div>
+  <div class="hero-text wrap">
+    <p class="om reveal" style="--d:.2s">ஓம் முருகா துணை</p>
+    <p class="lead reveal" style="--d:.35s">Together with our families, we joyfully invite you to the wedding of</p>
+
+    <h2 class="name gold-text write" style="--d:.5s"><span>Balashanthi</span></h2>
+    <p class="ta-name reveal" style="--d:.4s">கோ. பாலசாந்தி, M.E.</p>
+    <p class="cred reveal" style="--d:.5s">Assistant Professor, Kongu Engineering College, Erode</p>
+    <p class="parents reveal" style="--d:.6s">Daughter of Mr. P. Gopal Nadar &amp; Mrs. G. Kanchana Devi</p>
+
+    <div class="weds reveal">
+      <svg class="monogram" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 35 C8 26 3 19 3 12.5 A8 8 0 0 1 20 9 A8 8 0 0 1 37 12.5 C37 19 32 26 20 35Z" fill="rgba(212,166,63,.12)" stroke="currentColor" stroke-width="1.4"/><text x="20" y="24" text-anchor="middle" font-family="Marcellus,serif" font-size="11" fill="currentColor">BS</text></svg>
+    </div>
+
+    <h2 class="name gold-text write" style="--d:.2s"><span>Simonraja</span></h2>
+    <p class="ta-name reveal" style="--d:.4s">ஜெ. சீமோன்ராஜா, B.E.</p>
+    <p class="cred reveal" style="--d:.5s">DEO, TAC</p>
+    <p class="parents reveal" style="--d:.6s">Son of Mr. N. Jebamalai Packiyam Nadar &amp; Mrs. J. Shanmugakani</p>
+
+    <a class="scroll-cue reveal" href="#date">Scroll to see our story
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></a>
+  </div>
+</section>
+
+<!-- Scratch date -->
+<section class="date" id="date">
+  <div class="dust" aria-hidden="true"></div>
+  <svg class="lamp l" viewBox="0 0 44 150" aria-hidden="true"><line x1="22" y1="0" x2="22" y2="96" stroke="#C9972F" stroke-width="1.5" stroke-dasharray="3 3"/><path d="M8 100 Q22 92 36 100 L32 116 Q22 124 12 116Z" fill="#C9972F"/><circle cx="22" cy="104" r="3" fill="#FFF0B8"/><path d="M14 118 L22 140 L30 118" fill="#B07A1F"/><circle cx="22" cy="143" r="3" fill="#C9972F"/></svg>
+  <svg class="lamp r" viewBox="0 0 44 150" aria-hidden="true"><line x1="22" y1="0" x2="22" y2="70" stroke="#C9972F" stroke-width="1.5" stroke-dasharray="3 3"/><path d="M8 74 Q22 66 36 74 L32 90 Q22 98 12 90Z" fill="#C9972F"/><circle cx="22" cy="78" r="3" fill="#FFF0B8"/><path d="M14 92 L22 114 L30 92" fill="#B07A1F"/><circle cx="22" cy="117" r="3" fill="#C9972F"/></svg>
+
+  <div class="wrap">
+    <div class="arch">
+      <svg class="arch-shape" viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M8 400 V165 C8 122 28 112 44 102 C40 80 56 62 76 60 C79 40 99 27 119 31 C126 17 140 9 150 3 C160 9 174 17 181 31 C201 27 221 40 224 60 C244 62 260 80 256 102 C272 112 292 122 292 165 V400Z" fill="var(--c700)" stroke="var(--gold)" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+        <path d="M18 400 V170 C18 132 36 122 52 112 C49 92 62 76 81 73 C85 55 103 44 121 47 C128 34 140 26 150 20 C160 26 172 34 179 47 C197 44 215 55 219 73 C238 76 251 92 248 112 C264 122 282 132 282 170 V400" fill="none" stroke="var(--gold)" stroke-width="1" stroke-opacity=".55" vector-effect="non-scaling-stroke"/>
+      </svg>
+      <svg class="kalasam" viewBox="0 0 48 48" fill="currentColor" aria-hidden="true"><path d="M24 4c-3 4-7 6-11 6 2 2 5 3 8 3h6c3 0 6-1 8-3-4 0-8-2-11-6z"/><path d="M15 15h18v3H15z"/><path d="M13 20h22c4 4 6 9 5 14-1 6-7 10-16 10S9 40 8 34c-1-5 1-10 5-14zm5 9a2.5 2.5 0 1 0 0 .1zm12 0a2.5 2.5 0 1 0 0 .1zM24 24l-3 5 3 5 3-5z" fill-rule="evenodd"/></svg>
+      <h2 class="h2 gold-text reveal">Our special day</h2>
+      <p class="sub reveal" style="--d:.15s">Scratch the gold to reveal the date</p>
+
+      <div class="scratch reveal" id="scratch" style="--d:.3s">
+        <div class="scratch-under" aria-live="polite">
+          <span class="day">SUNDAY</span>
+          <span class="dnum">13 · 12 · 2026</span>
+          <span class="tdate">கார்த்திகை 27, ஞாயிற்றுக்கிழமை</span>
+        </div>
+        <canvas id="scratchCanvas" aria-label="Gold scratch card. Scratch to reveal the wedding date." role="img"></canvas>
+      </div>
+      <p class="scratch-hint" id="scratchHint">Gently scratch with your finger <br><button class="linkish" id="revealBtn">or tap here to reveal</button></p>
+
+      <div class="muhurtham" id="muhurtham"><div>
+        <p class="time">Muhurtham 10:30 – 11:45 AM</p>
+        <p>Thiruvonam nakshatram, Dhanusu lagnam</p>
+        <p class="ta">காலை 10.30 – 11.45 மணிக்குள்</p>
+      </div></div>
+    </div>
+  </div>
+
+  <svg class="lotus l" viewBox="0 0 120 80" aria-hidden="true"><g fill="#D4A63F" stroke="#8A5F14" stroke-width=".8"><path d="M60 78C40 70 30 50 34 26c12 8 22 26 26 52z"/><path d="M60 78C80 70 90 50 86 26c-12 8-22 26-26 52z"/><path d="M60 78C35 76 14 64 6 44c18 0 40 12 54 34z" fill="#E9C46A"/><path d="M60 78c25-2 46-14 54-34-18 0-40 12-54 34z" fill="#E9C46A"/><path d="M60 78C52 58 52 30 60 8c8 22 8 50 0 70z" fill="#F6DE97"/></g><ellipse cx="60" cy="79" rx="34" ry="4" fill="#6E4C10"/></svg>
+  <svg class="lotus r" viewBox="0 0 120 80" aria-hidden="true"><g fill="#D4A63F" stroke="#8A5F14" stroke-width=".8"><path d="M60 78C40 70 30 50 34 26c12 8 22 26 26 52z"/><path d="M60 78C80 70 90 50 86 26c-12 8-22 26-26 52z"/><path d="M60 78C35 76 14 64 6 44c18 0 40 12 54 34z" fill="#E9C46A"/><path d="M60 78c25-2 46-14 54-34-18 0-40 12-54 34z" fill="#E9C46A"/><path d="M60 78C52 58 52 30 60 8c8 22 8 50 0 70z" fill="#F6DE97"/></g><ellipse cx="60" cy="79" rx="34" ry="4" fill="#6E4C10"/></svg>
+</section>
+
+<!-- Timeline -->
+<section class="timeline" id="timeline">
+  <div class="dust" aria-hidden="true"></div>
+  <img class="tower" src="images/gopuram.jpg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <header>
+      <h2 class="h2 gold-text reveal">Wedding timeline</h2>
+      <p class="sub reveal" style="--d:.15s">Two auspicious moments, one forever</p>
+    </header>
+    <div class="events">
+      <article class="event reveal">
+        <div class="event-art">
+          <svg viewBox="0 0 260 168" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs><radialGradient id="glow" cx="50%" cy="70%" r="70%"><stop offset="0" stop-color="#F6DE97"/><stop offset=".55" stop-color="#B9432F"/><stop offset="1" stop-color="#8E3A12"/></radialGradient></defs>
+            <rect width="260" height="168" fill="url(#glow)"/>
+            <g stroke="#2F6B3A" stroke-width="1.4" fill="none"><path d="M0 34 Q130 70 260 34"/></g>
+            <g id="leaves" fill="#3E8A3E"></g>
+            <rect x="123" y="26" width="14" height="128" rx="5" fill="#F1D27A"/>
+            <g fill="#C0182F"><rect x="123" y="48" width="14" height="5"/><rect x="123" y="78" width="14" height="5"/><rect x="123" y="108" width="14" height="5"/></g>
+            <g fill="#FFD23F"><rect x="123" y="58" width="14" height="5"/><rect x="123" y="88" width="14" height="5"/><rect x="123" y="118" width="14" height="5"/></g>
+            <path d="M130 14 C120 22 112 26 104 26 C114 32 124 30 130 26 C136 30 146 32 156 26 C148 26 140 22 130 14Z" fill="#2F7A35"/>
+            <path d="M98 132 h64 c8 8 10 18 4 26 H94 c-6-8-4-18 4-26z" fill="#B5651D"/>
+            <path d="M98 132 h64" stroke="#FFE29A" stroke-width="3"/>
+            <circle cx="130" cy="146" r="4" fill="#C0182F"/>
+            <g fill="#F6A21B"><circle cx="40" cy="160" r="9"/><circle cx="220" cy="160" r="9"/></g>
+            <g fill="#FFD23F"><circle cx="58" cy="164" r="7"/><circle cx="202" cy="164" r="7"/></g>
+          </svg>
+        </div>
+        <div class="event-body">
+          <h3 class="gold-text">Muhurthakaal</h3>
+          <p class="ta">முகூர்த்தக்கால் நடுதல்</p>
+          <p class="when">Saturday, 12 December 2026</p>
+          <p class="hrs">6:00 – 7:00 PM</p>
+          <p class="what">The planting of the auspicious pole that begins the wedding rites</p>
+          <div class="actions">
+            <a class="pill" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Muhurthakaal%3A+Balashanthi+%26+Simonraja&amp;dates=20261212T123000Z%2F20261212T133000Z&amp;location=Eral%2C+Thoothukudi&amp;details=Muhurthakaal+%28planting+of+the+auspicious+pole%29+for+the+wedding+of+G.+Balashanthi+and+J.+Simonraja.&amp;ctz=Asia%2FKolkata">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M2 6.5h12M5.5 1.5v3M10.5 1.5v3"/></svg>Add to calendar</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="event reveal">
+        <div class="event-art"><img src="images/gopuram.jpg" alt="Temple gopuram with the vel, from the wedding card" style="object-position:50% 25%"></div>
+        <div class="event-body">
+          <h3 class="gold-text">Wedding</h3>
+          <p class="ta">திருமணம்</p>
+          <p class="when">Sunday, 13 December 2026</p>
+          <p class="hrs">10:30 – 11:45 AM</p>
+          <p class="where">Rasi Mandapam<br>Eral, Thoothukudi</p>
+          <p class="ta" style="margin-top:.2rem">ராசி மண்டபம், ஏரல், தூத்துக்குடி</p>
+          <div class="actions">
+            <a class="pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Rasi+Mandapam+Eral+Thoothukudi">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 15s5-4.6 5-8.5A5 5 0 0 0 3 6.5C3 10.4 8 15 8 15z"/><circle cx="8" cy="6.5" r="1.8"/></svg>View location</a>
+            <a class="pill" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wedding+of+Balashanthi+%26+Simonraja&amp;dates=20261213T050000Z%2F20261213T061500Z&amp;location=Rasi+Mandapam%2C+Eral%2C+Thoothukudi&amp;details=Muhurtham+10%3A30+to+11%3A45+AM.+Wedding+of+G.+Balashanthi+M.E.+and+J.+Simonraja+B.E.&amp;ctz=Asia%2FKolkata">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M2 6.5h12M5.5 1.5v3M10.5 1.5v3"/></svg>Add to calendar</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Countdown -->
+<section class="countdown" id="countdown">
+  <div class="dust" aria-hidden="true"></div>
+  <div class="border t" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="small reveal">The big day is getting closer</p>
+    <h2 class="h2 gold-text reveal">Counting down to forever</h2>
+    <p class="sub reveal" style="--d:.15s">Every second brings us closer to celebrating with you.</p>
+    <div class="tiles reveal" style="--d:.3s" id="tiles" role="timer" aria-live="off">
+      <div class="tile"><b id="cd-d">00</b><span>days</span></div>
+      <div class="tile"><b id="cd-h">00</b><span>hours</span></div>
+      <div class="tile"><b id="cd-m">00</b><span>minutes</span></div>
+      <div class="tile"><b id="cd-s">00</b><span>seconds</span></div>
+    </div>
+    <p class="cd-foot">13 December 2026, 10:30 AM</p>
+  </div>
+  <div class="border b" aria-hidden="true"></div>
+</section>
+
+<!-- Note -->
+<section class="note" id="note">
+  <div class="dust" aria-hidden="true"></div>
+  <svg class="shore" viewBox="0 0 400 52" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><g fill="#D4A63F"><path d="M150 52V30h6v-6h4v-8h4v-6h4V4h4v6h4v6h4v8h4v6h6v22z"/><rect x="196" y="38" width="70" height="14"/><path d="M214 38v-10h8v-6h6v6h8v10z"/><rect x="40" y="46" width="320" height="6"/></g></svg>
+  <div class="wrap">
+    <div class="letter reveal">
+      <p class="small">A little note for you</p>
+      <h2 class="h2">Dear guest</h2>
+      <p class="body">Two families, one blessing. With the grace of Lord Murugan and the love of our elders, we begin our life together on the 13th of December. It would mean the world to us to have you there, to share the muhurtham, the laughter and the feast, and to bless us as we take our first steps as one.</p>
+      <p class="ta-quote">உங்களின் வருகை எங்களை மகிழ வைக்கும்!<br>உங்களின் வாழ்த்து எங்களை வாழ வைக்கும்!</p>
+      <p class="small">With love,</p>
+      <p class="sign">Balashanthi &amp; Simonraja</p>
+    </div>
+  </div>
+</section>
+
+<!-- Families -->
+<section class="families">
+  <div class="dust" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 class="h2 gold-text reveal">With warm regards</h2>
+    <div class="fam-grid reveal" style="--d:.15s">
+      <div>
+        <h3>Bride’s family</h3>
+        <p>Mr. P. Gopal Nadar<br>Mrs. G. Kanchana Devi</p>
+      </div>
+      <div>
+        <h3>Groom’s family</h3>
+        <p>Mr. N. Jebamalai Packiyam Nadar<br>Mrs. J. Shanmugakani</p>
+      </div>
+    </div>
+    <p class="contact reveal" style="--d:.25s">Need help finding the venue? Call G. Indhumathi, the bride’s sister, at <a href="tel:+919789660422">97896 60422</a></p>
+    <img class="chariot reveal" style="--d:.3s" src="images/chariot.webp" alt="">
+    <p class="blessing">கருணை கடலே கந்தா போற்றி</p>
+  </div>
+</section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
