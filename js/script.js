@@ -41,7 +41,7 @@
         strands += '<g class="sw" style="animation-delay:-'+(k*0.9).toFixed(1)+'s;animation-duration:2.6s">';
         strands += '<line x1="'+x+'" y1="8" x2="'+x+'" y2="'+(H-16)+'" stroke="#E7B54A" stroke-width="1"/>';
         for(let j=0;j<6;j++) strands += flower(x, 20+j*12, j%2 ? 5 : 6.2, j===2 ? 'tJas' : (j%2 ? 'tYel' : 'tMari'));
-        strands += '<path d="M'+(x-4)+' '+(H-16)+' l4 13 l4 -13z" fill="#C0182F"/><circle cx="'+x+'" cy="'+(H-16)+'" r="2.4" fill="#F3D58A"/></g>';
+        strands += '<path d="M'+(x-4)+' '+(H-16)+' l4 13 l4 -13z" fill="#4F9A6B"/><circle cx="'+x+'" cy="'+(H-16)+'" r="2.4" fill="#F3D58A"/></g>';
       }
       const rope = '<path d="M0 7 H'+w+'" stroke="#7A5212" stroke-width="4.5"/><path d="M0 7 H'+w+'" stroke="#F3D58A" stroke-width="2" stroke-dasharray="5 3"/>';
       svg.innerHTML = defs + leaves + swags + strands + rope;
@@ -63,7 +63,7 @@
   let petals = [], raf = null;
   function sizePetals(){ const d=Math.min(devicePixelRatio||1,2); pc.width=innerWidth*d; pc.height=innerHeight*d; px.setTransform(d,0,0,d,0,0); }
   sizePetals(); addEventListener('resize', sizePetals);
-  const colours = ['#F6DE97','#D4A63F','#FFB300','#C0182F','#FFF3CC','#E8A33A'];
+  const colours = ['#F6DE97','#D4A63F','#FFB300','#4F9A6B','#FFF3CC','#E8A33A'];
   function burst(count, fromY){
     if(reduce) return;
     for(let i=0;i<count;i++){
